@@ -23,6 +23,7 @@ wheels/
 
 # Virtual Environment
 venv/
+venv311/
 ENV/
 
 # IDE
@@ -34,6 +35,8 @@ ENV/
 # Project specific
 pdf_folder/
 layoutlm_ocr_output/
+simple_ocr_output/
+enhanced_ocr_output/
 *.pdf
 *.txt
 *.json
@@ -44,4 +47,9 @@ layoutlm_ocr_output/
 
 # OS specific
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# Temporary files
+=1.4.2
+=0.3.0
+=2.7.0 
