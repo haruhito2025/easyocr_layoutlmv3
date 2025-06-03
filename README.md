@@ -47,8 +47,9 @@
 
 - Python 3.8以上
 - CUDA対応GPU（推奨）
-- macOSの場合: `brew install poppler`
-- Linuxの場合: `apt-get install poppler-utils`
+- システム依存関係:
+  - macOS: `brew install poppler`
+  - Linux: `apt-get install poppler-utils`
 
 ## 🛠 セットアップ
 
@@ -119,36 +120,6 @@ python main_simple.py
 ```bash
 # 全ての依存関係がインストール済みの場合
 python main.py
-```
-
-### 出力ファイル
-
-結果は以下に保存されます：
-
-#### 簡易版出力 (`simple_ocr_output/[PDF名]/`)
-- `MAIN_DOCUMENT.txt` - メイン抽出テキスト
-- `PROCESSING_REPORT.json` - 処理レポート
-- `page_X.txt` - ページ別テキスト
-
-#### 完全版出力 (`enhanced_ocr_output/[PDF名]/`)
-- `MAIN_DOCUMENT.txt` - メイン抽出テキスト
-- `FOR_AI.txt` - AI用最適化テキスト
-- `PROCESSING_REPORT.json` - 詳細処理レポート
-- `page_X.txt` - ページ別テキスト
-- `page_X.json` - ページ別詳細データ
-
-### プログラムでの使用
-
-```python
-# 簡易版
-from main_simple import SimplePDFOCR
-ocr_system = SimplePDFOCR(output_dir="custom_output")
-result = ocr_system.process_pdf("document.pdf")
-
-# 完全版
-from main import EnhancedPDFOCR
-ocr_system = EnhancedPDFOCR(output_dir="custom_output")
-result = ocr_system.process_pdf("document.pdf")
 ```
 
 ## 📊 処理結果の詳細
