@@ -3,4 +3,13 @@ transformers>=4.30.0
 easyocr>=1.7.0
 pdf2image>=1.16.3
 Pillow>=9.0.0
-numpy>=1.21.0 
+numpy>=1.21.0,<2.0.0
+scipy>=1.9.0,<1.12.0
+opencv-python-headless>=4.7.0
+paddleocr>=2.7.0
+PyMuPDF>=1.23.0
+# Real-ESRGAN（オプション、インストールエラーが出る場合はコメントアウト）
+# realesrgan>=0.3.0
+# basicsr>=1.4.2
+# 日本語言語モデル（オプション）
+# transformers[ja]>=4.30.0 

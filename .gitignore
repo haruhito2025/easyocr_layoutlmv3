@@ -34,4 +34,14 @@ ENV/
 # Project specific
 pdf_folder/
 layoutlm_ocr_output/
-*.pdf 
+*.pdf
+*.txt
+*.json
+!requirements.txt
+
+# Logs
+*.log
+
+# OS specific
+.DS_Store
+Thumbs.db 
